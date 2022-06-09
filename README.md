@@ -6,6 +6,10 @@
 * Information on bounding boxes: [Image Processing Techniques: What Are Bounding Boxes?](https://keymakr.com/blog/what-are-bounding-boxes/)
   * [How Bounding Box Enables Object Detection?](https://medium.com/tech-break/how-bounding-box-enables-object-detection-999b3059974e)
 * Information on the metric IoU: [Intersection over Union (IoU) for object detection](https://pyimagesearch.com/2016/11/07/intersection-over-union-iou-for-object-detection/)
+* AWS Sagemaker:
+  * [AWS SageMaker in 10 Minutes!](https://www.youtube.com/watch?v=pfjhNe1M2t4)
+  * [AWS Online Tech Talks - Build, Train and Deploy Machine Learning Models on AWS with Amazon SageMaker](https://www.youtube.com/watch?v=R0vC31OXt-g)
+  * [Step by step to Machine Learning with Sagemaker](https://www.youtube.com/watch?v=_FVYDU9-ftI)
 
 ## 🌴 Vacation plans
 
