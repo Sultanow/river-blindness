@@ -21,6 +21,7 @@
 * Sangmeng
   * [11-15] July
 * Sebastian
+  * [28-31] July
 
 
 ## Proposed project architecture
