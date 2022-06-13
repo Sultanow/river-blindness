@@ -1,0 +1,13 @@
+{
+    "DefaultUserSettings": {
+        "KernelGatewayAppSettings": {
+            "CustomImages": [
+                {
+                    "ImageName": "gdsc5-smstudio-custom",
+                    "AppImageConfigName": "gdsc5-smstudio-custom-config-new",
+                    "ImageVersionNumber": 1
+                }
+            ]
+        }
+    }
+}
