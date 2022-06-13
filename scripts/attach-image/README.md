@@ -1,3 +1,0 @@
-# README
-
-Files from AWS
