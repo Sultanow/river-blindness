@@ -1,0 +1,11 @@
+{
+    "cuda": false,
+    "batch_size": 32,
+    "epochs_per_fold": 80,
+    "learn_rate": 0.0005,
+    "n_classes": 2,
+    "weight_decay": 0.0002,
+    "k_folds": 5,
+    "test_val_split_size": 0.15,
+    "description": "Diese Evaluation wurde mit den RiverBlindness Datensatz getestet. Preprocessing wurde angewendet, allerdings kein Grayscale. Labels V2 wurde verwendet. Test_Val_split = 0.15"
+}
