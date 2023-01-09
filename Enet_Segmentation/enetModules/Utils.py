@@ -1,24 +1,39 @@
 import torchvision.transforms.functional as T
 import numpy as np
+import random
+
 
 class Utils:
-    def imageAugmentation(image):
+    def imageAugmentation(image, label, max_rotation_angle=180):
         '''
         This function augments the given image by rotating it.
         
         Arguments:
         - image : Image to augment
+        - label : Label to augment
 
         Return:
-        - augmented images : Returns an array of augmented images including the original image
+        - augmented_images : Returns an array of augmented images including the original image
+        - augmented_labels : Returns an array of augmented labels including the original label
         '''
-        augmented_images = []
-       
-        augmented_images.append(image)
-        augmented_images.append(T.rotate(image, 45, fill=0))
-        augmented_images.append(T.rotate(image, 135, fill=0))    
 
-        return augmented_images
+        augmented_images = []
+        augmented_labels = []
+
+        randomAngle = random.randint(0, max_rotation_angle)
+
+        augmented_images.append(image)
+        augmented_images.append(T.rotate(image, randomAngle, fill=0))
+        augmented_images.append(T.vflip(image))
+        augmented_images.append(T.hflip(image))
+
+        augmented_labels.append(label)
+        augmented_labels.append(T.rotate(label, randomAngle, fill=0))
+        augmented_labels.append(T.vflip(label))
+        augmented_labels.append(T.hflip(label))
+
+        return augmented_images, augmented_labels
+
 
     def get_class_weights(labels, num_classes, c=1.02):
         '''
@@ -39,6 +54,7 @@ class Utils:
         prospensity_score = each_class / len(all_labels)
         class_weights = 1 / (np.log(c + prospensity_score))
         return class_weights
+
 
     def decode_segmap(image, color_map):
         color_values = []
