@@ -33,8 +33,7 @@ class Utils:
         augmented_labels.append(T.hflip(label))
 
         return augmented_images, augmented_labels
-
-
+ 
     def get_class_weights(labels, num_classes, c=1.02):
         '''
         This class return the class weights for each class
