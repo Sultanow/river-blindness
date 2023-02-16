@@ -21,16 +21,26 @@ class Utils:
         augmented_labels = []
 
         randomAngle = random.randint(0, max_rotation_angle)
+        randomAngleSharpend = random.randint(0, max_rotation_angle)
+        randomAngleSharpend = -randomAngleSharpend
+        randomAngleVflip = random.randint(0, max_rotation_angle)
+        randomAngleHflip = random.randint(0, max_rotation_angle)
 
         augmented_images.append(image)
         augmented_images.append(T.rotate(image, randomAngle, fill=0))
+        augmented_images.append(T.rotate(T.adjust_contrast(T.adjust_sharpness(image, 1.8), 1.5), randomAngleSharpend, fill=0))
         augmented_images.append(T.vflip(image))
+        augmented_images.append(T.rotate(T.vflip(image), randomAngleVflip, fill=0))
         augmented_images.append(T.hflip(image))
+        augmented_images.append(T.rotate(T.hflip(image), randomAngleHflip, fill=0))
 
         augmented_labels.append(label)
         augmented_labels.append(T.rotate(label, randomAngle, fill=0))
+        augmented_labels.append(T.rotate(label, randomAngleSharpend, fill=0))
         augmented_labels.append(T.vflip(label))
+        augmented_labels.append(T.rotate(T.vflip(label), randomAngleVflip, fill=0))
         augmented_labels.append(T.hflip(label))
+        augmented_labels.append(T.rotate(T.hflip(label), randomAngleHflip, fill=0))
 
         return augmented_images, augmented_labels
  
