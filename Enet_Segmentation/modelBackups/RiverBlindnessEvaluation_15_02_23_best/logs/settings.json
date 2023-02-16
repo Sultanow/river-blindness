@@ -1,0 +1,9 @@
+{
+    "cuda": true,
+    "batch_size": 10,
+    "epochs": 120,
+    "learn_rate": 0.0005,
+    "n_classes": 2,
+    "weight_decay": 0.0002,
+    "description": "Diese Enet Training wurde mit den River Blindess Datensatz trainiert. Erweiterere(Rotation + Sharpend + Contrast) Datenaugmentierung wurde angewendet. Validation set wurde separiert."
+}
