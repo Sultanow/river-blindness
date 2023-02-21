@@ -5,5 +5,5 @@
     "learn_rate": 0.0005,
     "n_classes": 2,
     "weight_decay": 0.0002,
-    "description": "Diese Unet Evaluation wurde mit den Schistosoma Mansoni Datensatz trainiert. Erweiterere(Rotation + Sharpend + Contrast) Datenaugmentierung wurde angewendet. Validation set wurde separiert."
+    "description": "Diese Enet Training wurde mit dem Schistosoma Mansoni Datensatz trainiert. Erweiterere(Rotation + Sharpend + Contrast) Datenaugmentierung wurde angewendet. Validation set wurde separiert."
 }
