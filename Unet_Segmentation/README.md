@@ -1,0 +1,1 @@
+Für die Unet-Skripte gelten die selben Nutzeranweisungen wie im README.md im Enet-Segmentation-Verzeichnis. Das selbe requirements.txt wir auch für Unet verwendet.

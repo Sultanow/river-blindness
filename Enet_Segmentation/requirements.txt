@@ -1,0 +1,14 @@
+pytorch=1.13.1
+pytroch-cuda=11.6
+numpy=1.21.5
+matplotlib=3.5.2
+opencv-python=4.7.0.68
+scikit-learn=1.0.2
+tqdm=4.64.1
+pillow=9.2.0
+torchaudio=0.13.1
+torchmetrics=0.10.2
+torchvision=0.14.1
+pandas=1.4.4
+bokeh=2.4.3
+tabulate=0.8.10
