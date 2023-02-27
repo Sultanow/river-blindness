@@ -17,8 +17,11 @@ Achtung in der requirements.txt: Beim Python-Modul pytorch-cuda sollte an die Ha
 -ds/--dataset           Mit diesem Flag wird das Model übergeben, welches mit einem bestimmten Datensatz trainiert wurde. (riverblindness oder schistosoma)
 
 -i/--imagePath          Gibt den Pfad zum Eingabebild an.
+
 -vo                     Gibt die angewendete Visualisierungsoption an. (contour, alpha, paintBackground)
+
 -a                      Gibt den Transparenzwert für die Transparenzvisualisierung an.
+
 -r                      Gibt an in welchem Format das Endresultat gespeichert werden soll. Bei True ist das normal Resultat. Bei False wird ein Plot mit den Verarbeitungsschritten geplottet.
 
 -at/--areaThreshold     Gibt den Wert für den Flächengrenzwert der primären Objekte an.
